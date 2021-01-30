@@ -1,69 +1,127 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
-body {
-    background-color: black;
+body{
+    background-color:black;
     color: snow;
 }
-.main {
+.contenedor {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
 }
 .title {
-    font-size: 60px;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
-.sub-title {
-    font-size: 18px;
+.title h1 {
+    font-size: 80px;
 }
-.profile-img {
-    width: 1000px;
-    height: 600px;
-    margin-top: 4vh;
-}
-.profile-img:hover {
+.title h1:hover {
     transform: scale(1.1,1.1);
 }
-.profile-img img {
-    width: 100%;
+.title p {
+    font-size: 28px;
+    text-decoration: underline;
+}
+.img-profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.img-profile img {
+    width: 90%;
     height: auto;
 }
-.resume-life {
-    font-size: 28px;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+.list-bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
-.list {
-    width: 700px;
+.list-title h3 {
+    font-size: 30px;
+}
+.list-info {
+    width: 85%;
     font-size: 20px;
 }
-.list ul li {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.sentence {
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+.frase {
+    font-style: italic;
     font-size: 24px;
 }
-.sentence p {
-    font-style: italic;
-}
-.sentence p:hover {
+.frase:hover {
     text-decoration: underline;
+    transform: scale(1.1,1.1);
 }
 .more-info {
-    font-size: 16px;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 6vh;
 }
-a {
+.more-info a {
+    color: white;
     text-decoration: none;
 }
-a:hover {
+.more-info a:hover {
+    color: red;
     text-decoration: underline;
-    color: white;
 }
+
+@media all and (max-width: 576px) {
+    .title h1 {
+        font-size: 60px;
+    }
+    .title p {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 480px) {
+    .title h1 {
+        font-size: 50px;
+    }
+    .title p {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 436px) {
+    .title h1 {
+        font-size: 35px;
+    }
+    .title p {
+        font-size: 11px;
+    }
+}
+@media all and (max-width: 360px) {
+    .title h1 {
+        font-size: 34px;
+    }
+    .img-profile img {
+        width: 300px;
+    }
+    .list-title {
+        width: 100%;
+    }
+    .list-title h3 {
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 320px) {
+    .title h1 {
+        font-size: 25px;
+    }
+    .img-profile {
+        width: 100%;
+    }
+    .img-profile img {
+        width: 100%;
+    }
+}
+
+
