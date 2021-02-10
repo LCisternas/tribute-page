@@ -3,9 +3,17 @@
     padding: 10px;
     box-sizing: border-box;
 }
-body{
-    background-color:black;
-    color: snow;
+html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    color: black;
+    background-image: url(/img/pexels-spacex-23795.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
 }
 .contenedor {
     display: flex;
@@ -36,9 +44,10 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 .img-profile img {
-    width: 90%;
+    max-width: 100%;
     height: auto;
 }
 .list-bio {
@@ -51,8 +60,10 @@ body{
     font-size: 30px;
 }
 .list-info {
+    background-color: rgba(255, 255, 255, 0.5);
     width: 85%;
     font-size: 20px;
+    color: black;
 }
 .frase {
     font-style: italic;
@@ -66,7 +77,7 @@ body{
     margin-top: 6vh;
 }
 .more-info a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .more-info a:hover {
